@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <div class="title">📚 MCQ Exam</div>
+        <div class="subtitle">Answer carefully — timer auto-submits.</div>
+      </div>
+      <div class="pill">⏳ Time left: <b id="timer">--:--</b></div>
+    </div>
+
+    <div class="card">
+      <div id="qs"></div>
+      <div class="row">
+        <button class="btn" onclick="submitExam()">Submit</button>
+        <button class="btn ghost" onclick="location.href='index.html'">Back</button>
+      </div>
+      <div id="result" class="mtop success"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>startExamPage();</script>
+</body>
+</html>

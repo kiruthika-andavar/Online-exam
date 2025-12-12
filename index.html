@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Online Exam</title></head>
+<body>
+  <h2>Login</h2>
+  <input id="lemail" placeholder="email">
+  <input id="lpass" placeholder="password" type="password">
+  <button onclick="login()">Login</button>
+
+  <h2>Sign Up</h2>
+  <input id="semail" placeholder="email">
+  <input id="sname" placeholder="name">
+  <input id="spass" placeholder="password" type="password">
+  <button onclick="signup()">Sign up</button>
+
+  <h2>Profile</h2>
+  <div id="me"></div>
+  <input id="newname" placeholder="new name">
+  <button onclick="updateName()">Update Name</button>
+  <br><br>
+  <input id="oldp" placeholder="old password" type="password">
+  <input id="newp" placeholder="new password" type="password">
+  <button onclick="changePass()">Change Password</button>
+
+  <h2>Take Exam</h2>
+  <button onclick="goExam()">Go to Exam</button>
+  <button onclick="logout()">Logout</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
