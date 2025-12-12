@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Online Exam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <div class="title">📝 Online Examination</div>
+        <div class="subtitle">Login, update profile, and take the MCQ test.</div>
+      </div>
+      <button class="btn ghost" onclick="location.href='exam.html'">Open Exam</button>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Login</h3>
+        <div class="row">
+          <input id="lemail" class="input" placeholder="email">
+          <input id="lpass" class="input" placeholder="password" type="password">
+          <button class="btn" onclick="login()">Login</button>
+        </div>
+        <div class="small">Use the email/password you signed up with.</div>
+      </div>
+
+      <div class="card">
+        <h3>Sign Up</h3>
+        <div class="row">
+          <input id="semail" class="input" placeholder="email">
+          <input id="sname" class="input" placeholder="name">
+          <input id="spass" class="input" placeholder="password" type="password">
+          <button class="btn secondary" onclick="signup()">Sign up</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Profile</h3>
+        <div id="me" class="small">Not logged in</div>
+        <div class="row">
+          <input id="newname" class="input" placeholder="new name">
+          <button class="btn" onclick="updateName()">Update Name</button>
+        </div>
+        <div class="row">
+          <input id="oldp" class="input" placeholder="old password" type="password">
+          <input id="newp" class="input" placeholder="new password" type="password">
+          <button class="btn" onclick="changePass()">Change Password</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Take Exam</h3>
+        <div class="row">
+          <button class="btn secondary" onclick="goExam()">Go to Exam</button>
+          <button class="btn ghost" onclick="logout()">Logout</button>
+        </div>
+        <div class="small">Token-based session with auto-expiry.</div>
+      </div>
+    </div>
+
+    <div class="center mtop small">Built with Node.js + SQLite</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
